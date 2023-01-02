@@ -12,6 +12,10 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
+body {
+    background-color: black;
+}
+
 #container {
     width: min(1200px, 100%);
     max-width: 1200px;
@@ -22,14 +26,14 @@ html {
 
 #left {
     background-image: url("images/halie-west-25xggax4bSA-unsplash.jpg");
-    background-size: cover;        
+    background-size: cover;
     max-width: 35vw;
     min-width: 35vw;
     height: 100%;
 }
 
 #logo {
-    background-color: rgba(0, 0, 0, 0.3);    
+    background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,7 +62,7 @@ html {
 }
 
 #right {
-    background-color: #f3f3f3;    
+    background-color: #f3f3f3;
     padding: 5rem 0;
 }
 
@@ -80,18 +84,60 @@ html {
     margin: 1rem 0;
 }
 
-.form-controls {
+.row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 3rem;
 }
 
-#form-content {
+.form-content {
     background-color: white;
     padding: 1rem 3rem;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 15px 10px -15px;
+}
+
+.form-control {
+    margin-bottom: 1rem;
 }
 
 .form-control label {
     display: block;
     text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+input {
+    border: 1px solid lightgray;
+    border-radius: 4px;    
+    padding: 0.5rem;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+.btn {
+    border: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+}
+
+.btn-primary {
+    background-color: darkolivegreen;
+    color: white;
+}
+
+#submit {
+    margin: 1rem 0;
+    margin-left: 3rem;
+}
+
+a {
+    color: darkolivegreen;
+    text-decoration: none;
+}
+
+#have-account {
+    margin-left: 3rem;
 }
